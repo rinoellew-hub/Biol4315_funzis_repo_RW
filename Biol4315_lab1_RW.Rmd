@@ -42,3 +42,18 @@ This portion loads the ggplot2 package and plots a scatter plot of speed vs dist
 library(ggplot2)
 ggplot(cars, aes(x = speed, y= dist)) + geom_point()
 ````
+
+## Docker Funannotate
+
+````{r docker, eval=FALSE}
+docker pull nextgenusfs/funannotate
+````
+
+## Sequali Installation
+
+````{r sequali, eval=FALSE}
+conda search sequali 
+
+conda install sequali
+````
+
