@@ -1,5 +1,5 @@
 ---
-title: "Biol4315 Lab-1 Report"
+title: "Andrew"
 output: html_document
 date: "2026-09-14"
 ---
@@ -27,3 +27,32 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+## Installing Packages
+
+````{r packages, eval=FALSE}
+install.packages("vegan")
+````
+
+## Including ggplot2
+
+This portion loads the ggplot2 package and plots a scatter plot of speed vs dist from the cars dataset
+
+````{r cars plot}
+library(ggplot2)
+ggplot(cars, aes(x = speed, y= dist)) + geom_point()
+````
+
+## Docker Funannotate
+
+````{r docker, eval=FALSE}
+docker pull nextgenusfs/funannotate
+````
+
+## Sequali Installation
+
+````{r sequali, eval=FALSE}
+conda search sequali 
+
+conda install sequali
+````
